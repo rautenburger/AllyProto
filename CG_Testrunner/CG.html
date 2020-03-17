@@ -196,13 +196,13 @@
         <h2 id="navigation" class="qti-visually-hidden">Test Navigation</h2>
         <ul class="plain navi-box-list">
           <li data-control="move-forward" class="small btn-info action key-navigation-highlight" title="Submit and go to the next item" tabindex="-1">
-            <a role="button" class="li-inner" href="#" onclick="return false">
+            <a role="button" class="li-inner navi-next" href="#" onclick="return false">
               <span class="icon icon-forward"></span>
               <span class="text" aria-label="Submit and go to the next item">Next</span>
             </a>
           </li>
           <li data-control="move-backward" class="small btn-info action hidden" title="Submit and go to the previous item" tabindex="-1">
-            <a role="button" class="li-inner" href="#" onclick="return false">
+            <a role="button" class="li-inner navi-prev" href="#" onclick="return false">
               <span class="icon icon-backward"></span>
               <span class="text" aria-label="Submit and go to the previous item">Previous</span>
             </a>
@@ -214,51 +214,49 @@
       <h2 id="toolbox" class="qti-visually-hidden">Toolbox</h2>
       <ul id="tools" class="plain tools-box-list rendered">
         <li data-control="hide-review" class="small btn-info action rendered key-navigation-highlight" title="Hide the review screen" tabindex="-1">
-          <a role="button" class="li-inner" href="#" onclick="return false">
+          <a role="button" class="li-inner tool" href="#" onclick="return false" tabindex="-1">
             <span class="icon icon-left"></span>
             <span class="text">Hide Review</span>
           </a>
         </li>
         <li data-control="set-item-flag" class="small btn-info action rendered key-navigation-highlight" title="Flag the current item for later review" style="" tabindex="-1">
-          <a role="switch" class="li-inner" href="#" onclick="return false">
+          <a role="switch" class="li-inner tool" href="#" onclick="return false" tabindex="-1">
             <span class="icon icon-anchor"></span>
             <span aria-hidden="true" class="text">Flag for Review</span>
           </a>
         </li>
-        <li role="div" aria-hidden="true" class="separator rendered" data-control="separator1"></li>
         <li data-control="tools" class="small btn-info action  rendered key-navigation-highlight" title="Tools" tabindex="-1">
-          <a role="button" aria-haspopup="listbox" aria-collapsed="true" class="li-inner" data-control="tools-button" href="#">
+          <a role="button" aria-haspopup="listbox" aria-collapsed="true" class="li-inner tool" data-control="tools-button" href="#" tabindex="-1">
             <span class="icon icon-tools"></span>
             <span class="text" aria-hidden="true">Tools</span>
             &nbsp; <span class="icon icon-up"></span>
           </a>
         <li data-control="color-contrast" class="small btn-info action  rendered key-navigation-highlight" tabindex="-1">
-          <a role="button" aria-haspopup="listbox" aria-collapsed="true" class="li-inner" data-control="color-contrast-button" title="Change the current color contrast" href="#">
+          <a role="button" aria-haspopup="listbox" aria-collapsed="true" class="li-inner tool" data-control="color-contrast-button" title="Change the current color contrast" href="#" tabindex="-1">
             <span class="icon icon-contrast"></span>
             <span class="text" aria-hidden="true">Contrast</span>
             &nbsp;<span class="icon icon-up"></span>
           </a>
         <li data-control="highlight-trigger" class="small btn-info action rendered no-tool-label key-navigation-highlight" title="Highlight Text" tabindex="-1">
-          <a role="switch" class="li-inner" href="#" onclick="return false">
+          <a role="switch" class="li-inner tool" href="#" onclick="return false" tabindex="-1">
             <span class="icon icon-text-marker"></span>
             <span class="text" aria-hidden="true">Highlight</span>
           </a>
         </li>
         <li data-control="highlight-clear" class="small btn-info action rendered key-navigation-highlight" title="Clear all active highlights" tabindex="-1">
-          <a role="button" class="li-inner" href="#" onclick="return false">
+          <a role="button" class="li-inner tool" href="#" onclick="return false" tabindex="-1">
             <span class="icon icon-result-nok"></span>
             <span class="text" aria-hidden="true">Clear Highlights</span>
           </a>
         </li>
-        <li role="div" aria-hidden="true" class="separator rendered hidden autoHidden" data-control="separator2"></li>
         <li data-control="panel-help" class="small btn-info action rendered hidden">
-          <a role="button" aria-haspopup="true" aria-collapsed="true" class="li-inner" href="#" title="Help (H)" onclick="return false">
+          <a role="button" aria-haspopup="true" aria-collapsed="true" class="li-inner tool" href="#" title="Help (H)" onclick="return false" tabindex="-1">
             <span class="icon icon-help"></span>
             <span class="text" aria-hidden="true">Help (H)</span>
           </a>
         </li>
         <li data-control="apiptts" class="small btn-info action apiptts-plugin rendered hidden" title="Text to speech">
-          <a role="button" aria-haspopup="true" aria-collapsed="true" class="li-inner" href="#" onclick="return false">
+          <a role="button" aria-haspopup="true" aria-collapsed="true" class="li-inner tool" href="#" onclick="return false" tabindex="-1">
             <span class="icon icon-headphones"></span>
             <span class="text" aria-hidden="true">Text-to-speech</span>
           </a>
@@ -309,8 +307,8 @@
 
       <h3 class="qti-visually-hidden">Test structure</h3>
       <ul role=“tabgroup” class="plain clearfix">
-        <li role=“tab” aria-label=“All” class="qti-navigator-filter active key-navigation-highlight" data-mode="all" tabindex="0">
-          <span aria-hidden=“true” title="Reset filters" class="qti-navigator-tab">All</span>
+        <li id="tabFilterAll"  role=“tab” aria-label=“All” class="qti-navigator-filter active key-navigation-highlight" data-mode="all" tabindex="0">
+          <span   aria-hidden=“true” title="Reset filters" class="qti-navigator-tab">All</span>
         </li>
         <li role=“tab” aria-label=“Only display the unanswered items” class="qti-navigator-filter key-navigation-highlight" data-mode="unanswered" tabindex="-1">
           <span aria-hidden=“true” class="icon-unanswered qti-navigator-tab" title="Only display the unanswered items"></span>
@@ -331,7 +329,7 @@
             <div class="qti-navigator-section collapsible active" data-id="section-1">
               <ol id="Structure" class="qti-navigator-items collapsible-panel plain">
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
-                  <span tabindex="0" role="link" class="qti-navigator-label truncate key-navigation-highlight">
+                  <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
                     <span aria-label="viewed" class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
@@ -340,7 +338,7 @@
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
-                  <span tabindex="0" role="link" class="qti-navigator-label truncate key-navigation-highlight">
+                  <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
                     <span aria-current="page" aria-label="unseen" class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
@@ -349,7 +347,7 @@
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
-                  <span tabindex="0" role="link" class="qti-navigator-label truncate key-navigation-highlight">
+                  <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
                     <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
@@ -358,7 +356,7 @@
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
-                  <span tabindex="0" role="link" class="qti-navigator-label truncate key-navigation-highlight">
+                  <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
                     <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
@@ -367,7 +365,7 @@
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
-                  <span tabindex="0" role="link" class="qti-navigator-label truncate key-navigation-highlight">
+                  <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
                     <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
@@ -376,7 +374,7 @@
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
-                  <span tabindex="0" role="link" class="qti-navigator-label truncate key-navigation-highlight">
+                  <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
                     <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
@@ -385,7 +383,7 @@
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
-                  <span tabindex="0" role="link" class="qti-navigator-label truncate key-navigation-highlight">
+                  <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
                     <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
@@ -394,7 +392,7 @@
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
-                  <span tabindex="0" role="link" class="qti-navigator-label truncate key-navigation-highlight">
+                  <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
                     <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
@@ -403,7 +401,7 @@
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
-                  <span tabindex="0" role="link" class="qti-navigator-label truncate key-navigation-highlight">
+                  <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
                     <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
@@ -412,7 +410,7 @@
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
-                  <span tabindex="0" role="link" class="qti-navigator-label truncate key-navigation-highlight">
+                  <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
                     <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>

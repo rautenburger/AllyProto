@@ -124,3 +124,7 @@ fieldset {
   display: inline-block;
   width: 35%;
 }
+
+.overlay-answer-eliminator{
+  display:none;
+}
