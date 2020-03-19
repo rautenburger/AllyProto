@@ -119,6 +119,10 @@ aside {
   outline: none;
 }
 
+input:focus {
+  outline: solid 3px #1D6ECC;
+}
+
 fieldset {
   border-color: #ddd;
   display: inline-block;

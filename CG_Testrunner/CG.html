@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>English Test</title>
+  <title>ACT: Math Test</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <script type="text/javascript" src="jquery-3.4.1.min.js"></script>
@@ -13,10 +13,10 @@
   <nav aria-labelledby="a11y-jump-menu">
     <h2 id="a11y-jump-menu" class="qti-visually-hidden">Jump Menu</h2>
     <ul>
-      <li><a href="#question" class="jump-link" tabindex="0" role="button">Jump to Question 1</a></li>
-      <li><a href="#navigation" class="jump-link" tabindex="0" role="button">Jump to Test Navigation</a></li>
-      <li><a href="#toolbox" class="jump-link" tabindex="0" role="button">Jump to Toolbox</a></li>
-      <li><a href="#status" class="jump-link" tabindex="0" role="button">Jump to Test Status and Structure</a></li>
+      <li><a href="#question_LM" class="jump-link" tabindex="0" role="button">Jump to Question 1: unanswered</a></li>
+      <li><a href="#navigation_LM" class="jump-link" tabindex="0" role="button">Jump to Test Navigation</a></li>
+      <li><a href="#toolbox_LM" class="jump-link" tabindex="0" role="button">Jump to Toolbox</a></li>
+      <li><a href="#Status_LM" class="jump-link" tabindex="0" role="button">Jump to Test Status and Structure</a></li>
       <li><a href="#" class="jump-link" tabindex="0" role="button" aria-haspopup="true" aria-collapsed="true">Open System Shortcuts</a></li>
     </ul>
   </nav>
@@ -45,13 +45,13 @@
     <div class="action-bar content-action-bar horizontal-action-bar top-action-bar">
       <div class="control-box size-wrapper">
         <div class="title-box truncate">
-          <h1><span data-control="qti-test-title" class="qti-controls" title="Luc_A11y 1 - Non linear">English Test</span><span data-control="qti-test-position" class="qti-controls" title="Section 1"> - Part 1.</span></h1>
+          <h1><span data-control="qti-test-title" class="qti-controls" title="Luc_A11y 1 - Non linear">Math Test</span><span data-control="qti-test-position" class="qti-controls" title="Section 1"></span></h1>
         </div>
         <div aria-hidden="true" class="timer-box rendered">
           <a tabindex="-1" href="#" class="timer-toggler" title="Hide timers"><span class="icon-clock"></span></a>
           <div class="timer-wrapper">
             <div class="countdown rendered started running" data-control="Luc-A11y-1-non-linear" data-type="max" data-scope="test" title="Luc_A11y 1 - Non linear" disabled="">
-              <span class="label truncate">Luc_A11y 1 - Non linear</span>
+              <span class="label truncate">Math Test</span>
               <span role="timer" id="demo2"></span>
             </div>
           </div>
@@ -62,9 +62,9 @@
       </div>
     </div>
   </header>
-  <main aria-labelledby="question" tabindex="0">
+  <main id="question_LM" aria-labelledby="question" tabindex="0">
     <div class="content-wrapper">
-      <h2 class="qti-visually-hidden" id="question">Question 1: unanswered</h2>
+      <h2 id="question" class="qti-visually-hidden">Question 1: unanswered.</h2>
       <div id="qti-rubrics" class=""></div>
       <div id="qti-content">
         <div class="qti-item tao-scope runtime" data-serial="item_5e590a85bd2ac342146091" data-identifier="i1578411015582713913" lang="en-US">
@@ -73,8 +73,9 @@
               <div class="col01">
                 <div class="qti-interaction qti-blockInteraction qti-choiceInteraction key-navigation-group" data-serial="interaction_choiceinteraction_5e590a85bd3b0400301224" data-qti-class="choiceInteraction" data-navigation-id="navigator_1">
                   <div class="qti-prompt-container" data-html-editable-container="">
-                    <h3 class="qti-prompt" data-serial="prompt_y3cj2vp2i3d0kyw40lmyya" data-html-editable="" id="prompt-prompt_y3cj2vp2i3d0kyw40lmyya">This is a passage.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <h3 class="qti-prompt" data-serial="prompt_y3cj2vp2i3d0kyw40lmyya" data-html-editable="" id="prompt-prompt_y3cj2vp2i3d0kyw40lmyya">Use the following information to answer questions 1–5.</h3>
+                    <p>Miriam conducted a survey of the students in her 8th-grade class to determine which of 7 Olympic sports were the most popular. Each student who responded to the survey selected 1 Olympic sport as his or her favorite. The circle graph below shows the number of students who selected each of the 7 Olympic sports. A total of 40 students responded to the survey.</p>
+                    <p><img src="Graph.png" alt="Pie chart: Tennis: 1. Volleyball: 5. Aquatics: 5. Soccer: 5. Gymnastics: 5. Athletics: 9. Basketball: 10.">
                   </div>
                   </div>
                   </div>
@@ -82,104 +83,122 @@
               <div class="col02">
                 <div class="qti-interaction qti-blockInteraction qti-choiceInteraction key-navigation-group" data-serial="interaction_choiceinteraction_5e590a85bd3b0400301224" data-qti-class="choiceInteraction" data-navigation-id="navigator_1">
                   <div class="qti-prompt-container" data-html-editable-container="">
-                    <h3 class="qti-prompt" data-serial="prompt_y3cj2vp2i3d0kyw40lmyya" data-html-editable="" id="prompt-prompt_y3cj2vp2i3d0kyw40lmyya">This is a very tough question.</h3>
+                    <h3 class="qti-prompt" data-serial="prompt_y3cj2vp2i3d0kyw40lmyya" data-html-editable="" id="prompt-prompt_y3cj2vp2i3d0kyw40lmyyaa">To the nearest 0.1%, what percent of the students who responded to the survey selected Basketball?</h3>
                   </div>
                   <div class="instruction-container"></div>
-                  <ol class="plain block-listing solid choice-area " aria-labelledby="prompt-prompt_y3cj2vp2i3d0kyw40lmyya">
-                    <li class="qti-choice qti-simpleChoice" data-identifier="choice_1" data-serial="choice_simplechoice_5e590a85bd45e845456668">
+                  <ol class="plain block-listing solid choice-area">
+                        <li class="qti-choice qti-simpleChoice" data-identifier="A" data-serial="i5e6f38613c62b">
                       <div class="pseudo-label-box">
-                        <label class="real-label">
-                          <input type="checkbox" name="response-interaction_choiceinteraction_5e590a85bd3b0400301224" value="choice_1" tabindex="0" aria-labelledby="choice-interaction_choiceinteraction_5e590a85bd3b0400301224-choice_1"
-                            class="key-navigation-highlight" spellcheck="false" autocorrect="off">
-                          <span class="icon-checkbox"></span>
+                          <label class="real-label">
 
-                        </label>
-                        <div class="label-box">
-                          <div class="label-content clear" contenteditable="false" id="choice-interaction_choiceinteraction_5e590a85bd3b0400301224-choice_1">
-                            <div class="qti-block">choice #1</div>
-                            <svg class="overlay-answer-eliminator">
-                              <line x1="0" y1="100%" x2="100%" y2="0"></line>
-                              <line x1="0" y1="0" x2="100%" y2="100%"></line>
-                            </svg>
+                              <input type="radio" name="response-i5e6f38613c5f1" value="A" tabindex="0" aria-labelledby="choice-i5e6f38613c5f1-A" spellcheck="false" autocorrect="off" class="key-navigation-highlight">
+                              <span class="icon-radio"></span>
+
+                          </label>
+                          <div class="label-box">
+                              <div class="label-content clear" contenteditable="false" id="choice-i5e6f38613c5f1-A">
+                                  <div class="qti-block">10.0%</div>
+                                  <svg class="overlay-answer-eliminator">
+                                      <line x1="0" y1="100%" x2="100%" y2="0"></line>
+                                      <line x1="0" y1="0" x2="100%" y2="100%"></line>
+                                  </svg>
+                              </div>
                           </div>
-                        </div>
                       </div>
                       <label data-eliminable="container" data-label="Eliminate">
-                        <span data-eliminable="trigger" class="icon-checkbox"></span>
+                          <span data-eliminable="trigger" class="icon-checkbox"></span>
                       </label>
-                    </li>
-                    <li class="qti-choice qti-simpleChoice" data-identifier="choice_2" data-serial="choice_simplechoice_5e590a85bd4a6787735818">
+                  </li>
+                  <li class="qti-choice qti-simpleChoice" data-identifier="B" data-serial="i5e6f38613c7dc">
                       <div class="pseudo-label-box">
-                        <label class="real-label">
+                          <label class="real-label">
 
-                          <input type="checkbox" name="response-interaction_choiceinteraction_5e590a85bd3b0400301224" value="choice_2" tabindex="0" aria-labelledby="choice-interaction_choiceinteraction_5e590a85bd3b0400301224-choice_2"
-                            class="key-navigation-highlight" spellcheck="false" autocorrect="off">
-                          <span class="icon-checkbox"></span>
+                              <input type="radio" name="response-i5e6f38613c5f1" value="B" tabindex="0" aria-labelledby="choice-i5e6f38613c5f1-B" spellcheck="false" autocorrect="off" class="key-navigation-highlight">
+                              <span class="icon-radio"></span>
 
-                        </label>
-                        <div class="label-box">
-                          <div class="label-content clear" contenteditable="false" id="choice-interaction_choiceinteraction_5e590a85bd3b0400301224-choice_2">
-                            <div class="qti-block">choice #2</div>
-                            <svg class="overlay-answer-eliminator">
-                              <line x1="0" y1="100%" x2="100%" y2="0"></line>
-                              <line x1="0" y1="0" x2="100%" y2="100%"></line>
-                            </svg>
+                          </label>
+                          <div class="label-box">
+                              <div class="label-content clear" contenteditable="false" id="choice-i5e6f38613c5f1-B">
+                                  <div class="qti-block">12.5%</div>
+                                  <svg class="overlay-answer-eliminator">
+                                      <line x1="0" y1="100%" x2="100%" y2="0"></line>
+                                      <line x1="0" y1="0" x2="100%" y2="100%"></line>
+                                  </svg>
+                              </div>
                           </div>
-                        </div>
                       </div>
                       <label data-eliminable="container" data-label="Eliminate">
-                        <span data-eliminable="trigger" class="icon-checkbox"></span>
+                          <span data-eliminable="trigger" class="icon-checkbox"></span>
                       </label>
-                    </li>
-                    <li class="qti-choice qti-simpleChoice" data-identifier="choice_3" data-serial="choice_simplechoice_5e590a85bd4f4066186589">
+                  </li>
+                  <li class="qti-choice qti-simpleChoice" data-identifier="C" data-serial="i5e6f38613c965">
                       <div class="pseudo-label-box">
-                        <label class="real-label">
+                          <label class="real-label">
 
-                          <input type="checkbox" name="response-interaction_choiceinteraction_5e590a85bd3b0400301224" value="choice_3" tabindex="0" aria-labelledby="choice-interaction_choiceinteraction_5e590a85bd3b0400301224-choice_3"
-                            class="key-navigation-highlight" spellcheck="false" autocorrect="off">
-                          <span class="icon-checkbox"></span>
+                              <input type="radio" name="response-i5e6f38613c5f1" value="C" tabindex="0" aria-labelledby="choice-i5e6f38613c5f1-C" spellcheck="false" autocorrect="off" class="key-navigation-highlight">
+                              <span class="icon-radio"></span>
 
-                        </label>
-                        <div class="label-box">
-                          <div class="label-content clear" contenteditable="false" id="choice-interaction_choiceinteraction_5e590a85bd3b0400301224-choice_3">
-                            <div class="qti-block">choice #3</div>
-                            <svg class="overlay-answer-eliminator">
-                              <line x1="0" y1="100%" x2="100%" y2="0"></line>
-                              <line x1="0" y1="0" x2="100%" y2="100%"></line>
-                            </svg>
+                          </label>
+                          <div class="label-box">
+                              <div class="label-content clear" contenteditable="false" id="choice-i5e6f38613c5f1-C">
+                                  <div class="qti-block">22.5%</div>
+                                  <svg class="overlay-answer-eliminator">
+                                      <line x1="0" y1="100%" x2="100%" y2="0"></line>
+                                      <line x1="0" y1="0" x2="100%" y2="100%"></line>
+                                  </svg>
+                              </div>
                           </div>
-                        </div>
                       </div>
                       <label data-eliminable="container" data-label="Eliminate">
-                        <span data-eliminable="trigger" class="icon-checkbox"></span>
+                          <span data-eliminable="trigger" class="icon-checkbox"></span>
                       </label>
-                    </li>
-                    <li class="qti-choice qti-simpleChoice" data-identifier="choice_3" data-serial="choice_simplechoice_5e590a85bd4f4066186589">
+                  </li>
+                  <li class="qti-choice qti-simpleChoice user-selected" data-identifier="D" data-serial="i5e6f38613cae8">
                       <div class="pseudo-label-box">
-                        <label class="real-label">
+                          <label class="real-label">
 
-                          <input type="checkbox" name="response-interaction_choiceinteraction_5e590a85bd3b0400301224" value="choice_4" tabindex="0" aria-labelledby="choice-interaction_choiceinteraction_5e590a85bd3b0400301224-choice_4"
-                            class="key-navigation-highlight" spellcheck="false" autocorrect="off">
-                          <span class="icon-checkbox"></span>
+                              <input type="radio" name="response-i5e6f38613c5f1" value="D" tabindex="0" aria-labelledby="choice-i5e6f38613c5f1-D" spellcheck="false" autocorrect="off" class="key-navigation-highlight">
+                              <span class="icon-radio"></span>
 
-                        </label>
-                        <div class="label-box">
-                          <div class="label-content clear" contenteditable="false" id="choice-interaction_choiceinteraction_5e590a85bd3b0400301224-choice_4">
-                            <div class="qti-block">choice #4</div>
-                            <svg class="overlay-answer-eliminator">
-                              <line x1="0" y1="100%" x2="100%" y2="0"></line>
-                              <line x1="0" y1="0" x2="100%" y2="100%"></line>
-                            </svg>
+                          </label>
+                          <div class="label-box">
+                              <div class="label-content clear" contenteditable="false" id="choice-i5e6f38613c5f1-D">
+                                  <div class="qti-block">25.0%</div>
+                                  <svg class="overlay-answer-eliminator">
+                                      <line x1="0" y1="100%" x2="100%" y2="0"></line>
+                                      <line x1="0" y1="0" x2="100%" y2="100%"></line>
+                                  </svg>
+                              </div>
                           </div>
-                        </div>
                       </div>
                       <label data-eliminable="container" data-label="Eliminate">
-                        <span data-eliminable="trigger" class="icon-checkbox"></span>
+                          <span data-eliminable="trigger" class="icon-checkbox"></span>
                       </label>
-                    </li>
+                  </li>
+                  <li class="qti-choice qti-simpleChoice" data-identifier="E" data-serial="i5e6f38613cc69">
+                      <div class="pseudo-label-box">
+                          <label class="real-label">
 
-                  </ol>
-                  <div class="notification-container"></div>
+                              <input type="radio" name="response-i5e6f38613c5f1" value="E" tabindex="0" aria-labelledby="choice-i5e6f38613c5f1-E" spellcheck="false" autocorrect="off" class="key-navigation-highlight">
+                              <span class="icon-radio"></span>
+
+                          </label>
+                          <div class="label-box">
+                              <div class="label-content clear" contenteditable="false" id="choice-i5e6f38613c5f1-E">
+                                  <div class="qti-block">30.0%</div>
+                                  <svg class="overlay-answer-eliminator">
+                                      <line x1="0" y1="100%" x2="100%" y2="0"></line>
+                                      <line x1="0" y1="0" x2="100%" y2="100%"></line>
+                                  </svg>
+                              </div>
+                          </div>
+                      </div>
+                      <label data-eliminable="container" data-label="Eliminate">
+                          <span data-eliminable="trigger" class="icon-checkbox"></span>
+                      </label>
+                  </li>
+
+                    </ol>                  <div class="notification-container"></div>
                 </div>
 
               </div>
@@ -195,13 +214,13 @@
       <nav aria-labelledby="navigation" class="rgt navi-box">
         <h2 id="navigation" class="qti-visually-hidden">Test Navigation</h2>
         <ul class="plain navi-box-list">
-          <li data-control="move-forward" class="small btn-info action key-navigation-highlight" title="Submit and go to the next item" tabindex="-1">
-            <a role="button" class="li-inner navi-next" href="#" onclick="return false">
+          <li data-control="move-forward" class="small btn-info action key-navigation-highlight" tabindex="-1">
+            <a id="navigation_LM" role="button" class="li-inner navi-next" href="#" onclick="return false">
               <span class="icon icon-forward"></span>
               <span class="text" aria-label="Submit and go to the next item">Next</span>
             </a>
           </li>
-          <li data-control="move-backward" class="small btn-info action hidden" title="Submit and go to the previous item" tabindex="-1">
+          <li data-control="move-backward" class="small btn-info action hidden" tabindex="-1">
             <a role="button" class="li-inner navi-prev" href="#" onclick="return false">
               <span class="icon icon-backward"></span>
               <span class="text" aria-label="Submit and go to the previous item">Previous</span>
@@ -212,50 +231,44 @@
     </div>
     <aside aria-labelledby="toolbox" class="lft tools-box">
       <h2 id="toolbox" class="qti-visually-hidden">Toolbox</h2>
-      <ul id="tools" class="plain tools-box-list rendered">
+      <ul role="toolbar" id="tools" class="plain tools-box-list rendered">
         <li data-control="hide-review" class="small btn-info action rendered key-navigation-highlight" title="Hide the review screen" tabindex="-1">
-          <a role="button" class="li-inner tool" href="#" onclick="return false" tabindex="-1">
+          <a id="toolbox_LM" role="button" class="li-inner tool" href="#" onclick="return false" tabindex="0">
             <span class="icon icon-left"></span>
-            <span class="text">Hide Review</span>
+            <span aria-hidden="true" class="text">Hide Review</span>
           </a>
         </li>
         <li data-control="set-item-flag" class="small btn-info action rendered key-navigation-highlight" title="Flag the current item for later review" style="" tabindex="-1">
-          <a role="switch" class="li-inner tool" href="#" onclick="return false" tabindex="-1">
+          <a role="switch" class="li-inner tool" href="#" onclick="return false" tabindex="0">
             <span class="icon icon-anchor"></span>
             <span aria-hidden="true" class="text">Flag for Review</span>
           </a>
         </li>
         <li data-control="tools" class="small btn-info action  rendered key-navigation-highlight" title="Tools" tabindex="-1">
-          <a role="button" aria-haspopup="listbox" aria-collapsed="true" class="li-inner tool" data-control="tools-button" href="#" tabindex="-1">
+          <a role="button" aria-haspopup="listbox" aria-collapsed="true" class="li-inner tool" data-control="tools-button" href="#" tabindex="0">
             <span class="icon icon-tools"></span>
             <span class="text" aria-hidden="true">Tools</span>
             &nbsp; <span class="icon icon-up"></span>
           </a>
         <li data-control="color-contrast" class="small btn-info action  rendered key-navigation-highlight" tabindex="-1">
-          <a role="button" aria-haspopup="listbox" aria-collapsed="true" class="li-inner tool" data-control="color-contrast-button" title="Change the current color contrast" href="#" tabindex="-1">
+          <a role="button" aria-haspopup="listbox" aria-collapsed="true" class="li-inner tool" data-control="color-contrast-button" title="Change the current color contrast" href="#" tabindex="0">
             <span class="icon icon-contrast"></span>
             <span class="text" aria-hidden="true">Contrast</span>
             &nbsp;<span class="icon icon-up"></span>
           </a>
-        <li data-control="highlight-trigger" class="small btn-info action rendered no-tool-label key-navigation-highlight" title="Highlight Text" tabindex="-1">
+        <li aria-hidden="true" data-control="highlight-trigger" class="small btn-info action rendered no-tool-label key-navigation-highlight" title="Highlight Text" tabindex="-1">
           <a role="switch" class="li-inner tool" href="#" onclick="return false" tabindex="-1">
             <span class="icon icon-text-marker"></span>
             <span class="text" aria-hidden="true">Highlight</span>
           </a>
         </li>
-        <li data-control="highlight-clear" class="small btn-info action rendered key-navigation-highlight" title="Clear all active highlights" tabindex="-1">
+        <li aria-hidden="true" data-control="highlight-clear" class="small btn-info action rendered key-navigation-highlight" title="Clear all active highlights" tabindex="-1">
           <a role="button" class="li-inner tool" href="#" onclick="return false" tabindex="-1">
             <span class="icon icon-result-nok"></span>
             <span class="text" aria-hidden="true">Clear Highlights</span>
           </a>
         </li>
-        <li data-control="panel-help" class="small btn-info action rendered hidden">
-          <a role="button" aria-haspopup="true" aria-collapsed="true" class="li-inner tool" href="#" title="Help (H)" onclick="return false" tabindex="-1">
-            <span class="icon icon-help"></span>
-            <span class="text" aria-hidden="true">Help (H)</span>
-          </a>
-        </li>
-        <li data-control="apiptts" class="small btn-info action apiptts-plugin rendered hidden" title="Text to speech">
+        <li aria-hidden="true" data-control="apiptts" class="small btn-info action apiptts-plugin rendered hidden" title="Text to speech" tabindex="-1">
           <a role="button" aria-haspopup="true" aria-collapsed="true" class="li-inner tool" href="#" onclick="return false" tabindex="-1">
             <span class="icon icon-headphones"></span>
             <span class="text" aria-hidden="true">Text-to-speech</span>
@@ -264,11 +277,11 @@
       </ul>
     </aside>
 
-    <aside id="status" aria-labelledby=“TestStatus”>
+    <aside aria-labelledby=“TestStatus”>
       <h2 id=“TestStatus” class="qti-visually-hidden">Test status and structure</h2>
-      <button aria-haspopup=“drop” aria-collapsed=“true” class="qti-navigator-info collapsible">
+      <button id="Status_LM" aria-haspopup=“drop” aria-collapsed=“true” class="qti-navigator-info collapsible">
         <span class="qti-navigator-label">
-          <h3 class="qti-navigator-text">Test status</h3>
+          <span class="qti-navigator-text">Test status</span>
           <span class="icon-up"></span>
           <span class="icon-down"></span>
         </span>
@@ -305,31 +318,29 @@
         </ul>
       </div>
 
-      <h3 class="qti-visually-hidden">Test structure</h3>
       <ul role=“tabgroup” class="plain clearfix">
-        <li id="tabFilterAll"  role=“tab” aria-label=“All” class="qti-navigator-filter active key-navigation-highlight" data-mode="all" tabindex="0">
-          <span   aria-hidden=“true” title="Reset filters" class="qti-navigator-tab">All</span>
+        <li id="tabFilterAll"  role=“tab” aria-label="Display all items" class="qti-navigator-filter active key-navigation-highlight" data-mode="all" tabindex="0">
+          <span aria-hidden=“true” title="Reset filters" class="qti-navigator-tab" tabindex="-1">All</span>
         </li>
-        <li role=“tab” aria-label=“Only display the unanswered items” class="qti-navigator-filter key-navigation-highlight" data-mode="unanswered" tabindex="-1">
-          <span aria-hidden=“true” class="icon-unanswered qti-navigator-tab" title="Only display the unanswered items"></span>
+        <li role=“tab” aria-label="Only display the unanswered items" class="qti-navigator-filter key-navigation-highlight" data-mode="unanswered" tabindex="0">
+          <span aria-hidden=“true” class="icon-unanswered qti-navigator-tab" title="Only display the unanswered items" tabindex="-1"></span>
         </li>
-        <li role=“tab” aria-label=“Only display the items marked for review” class="qti-navigator-filter key-navigation-highlight" data-mode="flagged" tabindex="-1">
-          <span aria-hidden=“true” class="icon-flagged qti-navigator-tab" title="Only display the items marked for review"></span>
+        <li role=“tab” aria-label="Only display the items marked for review" class="qti-navigator-filter key-navigation-highlight" data-mode="flagged" tabindex="0">
+          <span aria-hidden=“true” class="icon-flagged qti-navigator-tab" title="Only display the items marked for review" tabindex="-1"></span>
         </li>
       </ul>
       <div class="qti-navigator-tree key-navigation-group" data-navigation-id="navigator-items">
         <div class="qti-navigator-parts plain">
       		<div data-id="testPart-2">
           <span class="qti-navigator-label" title="testPart-2">
-            <span class="qti-navigator-text">testPart-2</span>
             <span class="icon-up"></span>
             <span class="icon-down"></span>
           </span>
           <div class="qti-navigator-sections collapsible-panel plain">
             <div class="qti-navigator-section collapsible active" data-id="section-1">
-              <ol id="Structure" class="qti-navigator-items collapsible-panel plain">
+              <ol role="menu" id="Structure" class="qti-navigator-items collapsible-panel plain">
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
-                  <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
+                  <span role="link" class="qti-navigator-label truncate key-navigation-highlight" tabindex="0">
                     <span aria-label="viewed" class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>

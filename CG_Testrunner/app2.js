@@ -40,14 +40,14 @@ $(function () {
     startTimer(2, 'timer');
 
     //allow tabbing into the list of links that are controlled by keyboard arrow keys
-    $("#tabFilterAll").on("keydown", function (e) {
-        if (e.which === 9 && !e.shiftKey) {
-            $('#Structure')
-                .find("li:first span")
-                .focus();
-            e.preventDefault();
-        }
-    });
+    //$("#tabFilterAll").on("keydown", function (e) {
+        //if (e.which === 9 && !e.shiftKey) {
+            //$('#Structure')
+                //.find("li:first span")
+                //.focus();
+            //e.preventDefault();
+        //}
+    //});
 
     $("span.qti-navigator-label").on("keydown", function (e) {
         var $next;
@@ -71,7 +71,7 @@ $(function () {
         }
     });
 
-    $(".navi-prev").on("keydown", function (e) {
+   $(".navi-prev").on("keydown", function (e) {
         if (e.which === 9 && !e.shiftKey) {
             console.log($('.tools-box-list'))
             $('.tools-box-list')
@@ -84,12 +84,11 @@ $(function () {
     $('#status button').on("keydown", function (e) {
         if (e.which === 9 && e.shiftKey) {
             $('.tools-box-list')
-                .find("li:first a")
+                .find("li:last a")
                 .focus();
             e.preventDefault();
         }
     });
-
     $("a.li-inner.tool").on("keydown", function (e) {
         var $next;
         switch (e.which) {
