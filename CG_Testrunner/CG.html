@@ -232,20 +232,20 @@
     <aside aria-labelledby="toolbox" class="lft tools-box">
       <h2 id="toolbox" class="qti-visually-hidden">Toolbox</h2>
       <ul role="toolbar" id="tools" class="plain tools-box-list rendered">
-        <li data-control="hide-review" class="small btn-info action rendered key-navigation-highlight" title="Hide the review screen" tabindex="-1">
-          <a id="toolbox_LM" role="button" class="li-inner tool" href="#" onclick="return false" tabindex="0">
+        <li data-control="hide-review" class="small btn-info action rendered key-navigation-highlight" tabindex="-1">
+          <a id="toolbox_LM" role="button" class="li-inner tool" href="#" onclick="return false" title="Hide the review screen" tabindex="0">
             <span class="icon icon-left"></span>
             <span aria-hidden="true" class="text">Hide Review</span>
           </a>
         </li>
-        <li data-control="set-item-flag" class="small btn-info action rendered key-navigation-highlight" title="Flag the current item for later review" style="" tabindex="-1">
-          <a role="switch" class="li-inner tool" href="#" onclick="return false" tabindex="0">
+        <li data-control="set-item-flag" class="small btn-info action rendered key-navigation-highlight" style="" tabindex="-1">
+          <a role="switch" class="li-inner tool" href="#" onclick="return false" title="Flag the current item for later review" tabindex="0">
             <span class="icon icon-anchor"></span>
             <span aria-hidden="true" class="text">Flag for Review</span>
           </a>
         </li>
-        <li data-control="tools" class="small btn-info action  rendered key-navigation-highlight" title="Tools" tabindex="-1">
-          <a role="button" aria-haspopup="listbox" aria-collapsed="true" class="li-inner tool" data-control="tools-button" href="#" tabindex="0">
+        <li data-control="tools" class="small btn-info action  rendered key-navigation-highlight" tabindex="-1">
+          <a role="button" aria-haspopup="listbox" aria-collapsed="true" class="li-inner tool" data-control="tools-button" title="Tools" href="#" tabindex="0">
             <span class="icon icon-tools"></span>
             <span class="text" aria-hidden="true">Tools</span>
             &nbsp; <span class="icon icon-up"></span>
@@ -256,20 +256,20 @@
             <span class="text" aria-hidden="true">Contrast</span>
             &nbsp;<span class="icon icon-up"></span>
           </a>
-        <li aria-hidden="true" data-control="highlight-trigger" class="small btn-info action rendered no-tool-label key-navigation-highlight" title="Highlight Text" tabindex="-1">
-          <a role="switch" class="li-inner tool" href="#" onclick="return false" tabindex="-1">
+        <li aria-hidden="true" data-control="highlight-trigger" class="small btn-info action rendered no-tool-label key-navigation-highlight" tabindex="-1">
+          <a role="switch" class="li-inner tool" href="#" onclick="return false" tabindex="-1" title="Highlight Text">
             <span class="icon icon-text-marker"></span>
             <span class="text" aria-hidden="true">Highlight</span>
           </a>
         </li>
-        <li aria-hidden="true" data-control="highlight-clear" class="small btn-info action rendered key-navigation-highlight" title="Clear all active highlights" tabindex="-1">
-          <a role="button" class="li-inner tool" href="#" onclick="return false" tabindex="-1">
+        <li aria-hidden="true" data-control="highlight-clear" class="small btn-info action rendered key-navigation-highlight" tabindex="-1">
+          <a role="button" class="li-inner tool" href="#" onclick="return false" tabindex="-1" title="Clear all active highlights" >
             <span class="icon icon-result-nok"></span>
             <span class="text" aria-hidden="true">Clear Highlights</span>
           </a>
         </li>
-        <li aria-hidden="true" data-control="apiptts" class="small btn-info action apiptts-plugin rendered hidden" title="Text to speech" tabindex="-1">
-          <a role="button" aria-haspopup="true" aria-collapsed="true" class="li-inner tool" href="#" onclick="return false" tabindex="-1">
+        <li aria-hidden="true" data-control="apiptts" class="small btn-info action apiptts-plugin rendered hidden" tabindex="-1">
+          <a role="button" aria-haspopup="true" aria-collapsed="true" class="li-inner tool" href="#" onclick="return false" title="Text to speech" tabindex="-1">
             <span class="icon icon-headphones"></span>
             <span class="text" aria-hidden="true">Text-to-speech</span>
           </a>
@@ -297,21 +297,21 @@
           <li class="qti-navigator-answered" title="Completed items">
             <span class="qti-navigator-label">
               <span class="qti-navigator-icon icon-answered"></span>
-              <span class="qti-navigator-text" aria-hidden="true">Answered: </span>
+              <span class="qti-navigator-text">Answered: </span>
               <span class="qti-navigator-counter">0/10</span>
             </span>
           </li>
           <li class="qti-navigator-unanswered" title="Unanswered items">
             <span class="qti-navigator-label">
               <span class="qti-navigator-icon icon-unanswered"></span>
-              <span class="qti-navigator-text" aria-hidden="true">Unanswered: </span>
+              <span class="qti-navigator-text">Unanswered: </span>
               <span class="qti-navigator-counter">10/10</span>
             </span>
           </li>
           <li class="qti-navigator-flagged" title="Items marked for later review">
             <span class="qti-navigator-label">
               <span class="qti-navigator-icon icon-flagged"></span>
-              <span class="qti-navigator-text" aria-hidden="true">Flagged</span>
+              <span class="qti-navigator-text">Flagged</span>
               <span class="qti-navigator-counter">0/10</span>
             </span>
           </li>
@@ -319,14 +319,14 @@
       </div>
 
       <ul role=“tabgroup” class="plain clearfix">
-        <li id="tabFilterAll"  role=“tab” aria-label="Display all items" class="qti-navigator-filter active key-navigation-highlight" data-mode="all" tabindex="0">
-          <span aria-hidden=“true” title="Reset filters" class="qti-navigator-tab" tabindex="-1">All</span>
+        <li id="tabFilterAll"  role=“tab” aria-label="Display all items" class="qti-navigator-filter active key-navigation-highlight" data-mode="all">
+          <span aria-hidden=“true” title="Reset filters" class="qti-navigator-tab" tabindex="0">All</span>
         </li>
-        <li role=“tab” aria-label="Only display the unanswered items" class="qti-navigator-filter key-navigation-highlight" data-mode="unanswered" tabindex="0">
-          <span aria-hidden=“true” class="icon-unanswered qti-navigator-tab" title="Only display the unanswered items" tabindex="-1"></span>
+        <li role=“tab” aria-label="Only display the unanswered items" class="qti-navigator-filter key-navigation-highlight" data-mode="unanswered">
+          <span aria-hidden=“true” class="icon-unanswered qti-navigator-tab" title="Only display the unanswered items" tabindex="0"></span>
         </li>
-        <li role=“tab” aria-label="Only display the items marked for review" class="qti-navigator-filter key-navigation-highlight" data-mode="flagged" tabindex="0">
-          <span aria-hidden=“true” class="icon-flagged qti-navigator-tab" title="Only display the items marked for review" tabindex="-1"></span>
+        <li role=“tab” aria-label="Only display the items marked for review" class="qti-navigator-filter key-navigation-highlight" data-mode="flagged">
+          <span aria-hidden=“true” class="icon-flagged qti-navigator-tab" title="Only display the items marked for review" tabindex="0"></span>
         </li>
       </ul>
       <div class="qti-navigator-tree key-navigation-group" data-navigation-id="navigator-items">
@@ -340,93 +340,93 @@
             <div class="qti-navigator-section collapsible active" data-id="section-1">
               <ol role="menu" id="Structure" class="qti-navigator-items collapsible-panel plain">
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
-                  <span role="link" class="qti-navigator-label truncate key-navigation-highlight" tabindex="0">
-                    <span aria-label="viewed" class="qti-navigator-icon icon-viewed">
+                  <span aria-current="page" role="link" class="qti-navigator-label truncate key-navigation-highlight" tabindex="0">
+                    <span class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
                     <span aria-hidden="true" class="qti-navigator-number">1</span>
-                    Item 1
+                    Question 1: viewed.
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
                   <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
-                    <span aria-current="page" aria-label="unseen" class="qti-navigator-icon icon-viewed">
+                    <span class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
                     <span aria-hidden="true" class="qti-navigator-number">2</span>
-                    Item 2
+                    Question 2: unseen.
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
                   <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
-                    <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
+                    <span class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
                     <span aria-hidden="true" class="qti-navigator-number">3</span>
-                    Item 3
+                    Question 3: unseen.
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
                   <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
-                    <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
+                    <span class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
                     <span aria-hidden="true" class="qti-navigator-number">4</span>
-                    Item 4
+                    Question 4: unseen.
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
                   <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
-                    <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
+                    <span class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
                     <span aria-hidden="true" class="qti-navigator-number">5</span>
-                    Item 5
+                    Question 5: unseen.
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
                   <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
-                    <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
+                    <span class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
                     <span aria-hidden="true" class="qti-navigator-number">6</span>
-                    Item 6
+                    Question 6: unseen.
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
                   <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
-                    <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
+                    <span class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
                     <span aria-hidden="true" class="qti-navigator-number">7</span>
-                    Item 7
+                    Question 7: unseen.
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
                   <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
-                    <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
+                    <span class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
                     <span aria-hidden="true" class="qti-navigator-number">8</span>
-                    Item 8
+                    Question 8: unseen.
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
                   <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
-                    <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
+                    <span class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
                     <span aria-hidden="true" class="qti-navigator-number">9</span>
-                    Item 9
+                    Question 9: unseen.
                   </span>
                 </li>
                 <li class="qti-navigator-item viewed" title=“” data-id="item-6" data-position="1">
                   <span tabindex="-1" role="link" class="qti-navigator-label truncate key-navigation-highlight">
-                    <span aria-label="unseen" class="qti-navigator-icon icon-viewed">
+                    <span class="qti-navigator-icon icon-viewed">
                       <div></div>
                     </span>
                     <span aria-hidden="true" class="qti-navigator-number">10</span>
-                    Item 10
+                    Question 10: unseen.
                   </span>
                 </li>
               </ol>
