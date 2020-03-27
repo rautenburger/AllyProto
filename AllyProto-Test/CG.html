@@ -10,7 +10,8 @@
 <script type="text/javascript" src="app2.js"></script>
 
 <body>
-  <nav aria-label="Jump Menu.">
+  <nav aria-labelledby="a11y-jump-menu">
+    <h2 id="a11y-jump-menu" class="qti-visually-hidden">Jump Menu</h2>
     <ul>
       <li><a href="#question_LM" class="jump-link" tabindex="0" role="button">Jump to Question 1: unanswered</a></li>
       <li><a href="#navigation_LM" class="jump-link" tabindex="0" role="button">Jump to Test Navigation</a></li>
@@ -19,7 +20,8 @@
       <li><a href="#" class="jump-link" tabindex="0" role="button" aria-haspopup="true" aria-collapsed="true">Open System Shortcuts</a></li>
     </ul>
   </nav>
-  <header aria-label="Main Menu." class="dark-bar clearfix">
+  <header class="dark-bar clearfix">
+    <h2 class="qti-visually-hidden">Header</h2>
     <span class="lft"><img src="http://test-act-accessibility.playground.kitchen.it.taocloud.org:41186/taoAct/views/img/themes/platform/default/act-logo.png?buster=5e621deeab774" alt="ACT Logo" id="tao-main-logo"></span>
     <div class="lft title-box"></div>
     <div class="rgt">
@@ -61,7 +63,7 @@
     </div>
   </header>
   <main id="question_LM" aria-labelledby="question" tabindex="0">
-    <div role="form" class="content-wrapper">
+    <div class="content-wrapper">
       <h2 id="question" class="qti-visually-hidden">Question 1: unanswered.</h2>
       <div id="qti-rubrics" class=""></div>
       <div id="qti-content">
@@ -210,7 +212,7 @@
   <div class="action-bar content-action-bar horizontal-action-bar bottom-action-bar key-navigation-group" data-navigation-id="bottom-toolbar">
     <div class="control-box size-wrapper">
       <nav aria-labelledby="navigation" class="rgt navi-box">
-        <h2 id="navigation" class="qti-visually-hidden">Test Navigation.</h2>
+        <h2 id="navigation" class="qti-visually-hidden">Test Navigation</h2>
         <ul class="plain navi-box-list">
           <li data-control="move-forward" class="small btn-info action key-navigation-highlight" tabindex="-1">
             <a id="navigation_LM" role="button" class="li-inner navi-next" href="#" onclick="return false">
@@ -228,7 +230,7 @@
       </nav>
     </div>
     <aside aria-labelledby="toolbox" class="lft tools-box">
-      <h2 id="toolbox" class="qti-visually-hidden">Toolbox.</h2>
+      <h2 id="toolbox" class="qti-visually-hidden">Toolbox</h2>
       <ul role="toolbar" id="tools" class="plain tools-box-list rendered">
         <li data-control="hide-review" class="small btn-info action rendered key-navigation-highlight" tabindex="-1">
           <a id="toolbox_LM" role="button" class="li-inner tool" href="#" onclick="return false" title="Hide the review screen" tabindex="0">
@@ -243,13 +245,13 @@
           </a>
         </li>
         <li data-control="tools" class="small btn-info action  rendered key-navigation-highlight" tabindex="-1">
-          <a aria-label="Test Taker Tools" role="button" aria-haspopup="listbox" aria-collapsed="true" class="li-inner tool" data-control="tools-button" href="#" tabindex="0">
+          <a role="button" aria-haspopup="listbox" aria-collapsed="true" class="li-inner tool" data-control="tools-button" title="Tools" href="#" tabindex="0">
             <span class="icon icon-tools"></span>
             <span class="text" aria-hidden="true">Tools</span>
             &nbsp; <span class="icon icon-up"></span>
           </a>
         <li data-control="color-contrast" class="small btn-info action  rendered key-navigation-highlight" tabindex="-1">
-          <a role="button" aria-haspopup="listbox" aria-collapsed="true" class="li-inner tool" data-control="color-contrast-button" aria-label="Change the current color contrast" href="#" tabindex="0">
+          <a role="button" aria-haspopup="listbox" aria-collapsed="true" class="li-inner tool" data-control="color-contrast-button" title="Change the current color contrast" href="#" tabindex="0">
             <span class="icon icon-contrast"></span>
             <span class="text" aria-hidden="true">Contrast</span>
             &nbsp;<span class="icon icon-up"></span>
@@ -276,7 +278,7 @@
     </aside>
 
     <aside aria-labelledby=“TestStatus”>
-      <h2 id=“TestStatus” class="qti-visually-hidden">Test status and structure.</h2>
+      <h2 id=“TestStatus” class="qti-visually-hidden">Test status and structure</h2>
       <button id="Status_LM" aria-haspopup=“drop” aria-collapsed=“true” class="qti-navigator-info collapsible">
         <span class="qti-navigator-label">
           <span class="qti-navigator-text">Test status</span>
@@ -286,30 +288,30 @@
       </button>
       <div id="drop">
         <div>
-          <div data-control="Luc-A11y-1-non-linear" data type="max" data-scope="test">
+          <div data-control="Luc-A11y-1-non-linear" data type="max" data-scope="test" title="Luc_A11y 1 - Non linear">
             <span class="label truncate">Test timer:</span>
             <span role="timer" id="timer">59m 27s</span><span> to answer remaining</span><span class=“qti-navigator-counter”> 10</span><span> questions.</span>
           </div>
         </div>
         <ul class="collapsible-panel plain">
-          <li class="qti-navigator-answered">
+          <li class="qti-navigator-answered" title="Completed items">
             <span class="qti-navigator-label">
               <span class="qti-navigator-icon icon-answered"></span>
               <span class="qti-navigator-text">Answered: </span>
               <span class="qti-navigator-counter">0/10</span>
             </span>
           </li>
-          <li class="qti-navigator-unanswered">
+          <li class="qti-navigator-unanswered" title="Unanswered items">
             <span class="qti-navigator-label">
               <span class="qti-navigator-icon icon-unanswered"></span>
               <span class="qti-navigator-text">Unanswered: </span>
               <span class="qti-navigator-counter">10/10</span>
             </span>
           </li>
-          <li class="qti-navigator-flagged">
+          <li class="qti-navigator-flagged" title="Items marked for later review">
             <span class="qti-navigator-label">
               <span class="qti-navigator-icon icon-flagged"></span>
-              <span class="qti-navigator-text">Flagged: </span>
+              <span class="qti-navigator-text">Flagged</span>
               <span class="qti-navigator-counter">0/10</span>
             </span>
           </li>
@@ -438,7 +440,8 @@
 
 
 
-  <footer aria-label="About." class="dark-bar">
+  <footer class="dark-bar">
+    <h2 class="qti-visually-hidden">Footer</h2>
     <span>© 2020 by ACT, Inc. All rights reserved.</span>
     <span class="rgt workkeys">TAO Software <span class="tao-version">3.4.0-sprint123</span> © 2013-2020 by O<span class="collapsible">pen </span>A<span class="collapsible">ssessment </span>T<span class="collapsible">echnologies </span> S.A. All
       rights reserved.</span>
