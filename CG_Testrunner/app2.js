@@ -75,7 +75,7 @@ $(function () {
         if (e.which === 9 && !e.shiftKey) {
             console.log($('.tools-box-list'))
             $('.tools-box-list')
-                .find("li:first a")
+                .find("li:second a")
                 .focus();
             e.preventDefault();
         }
@@ -89,27 +89,27 @@ $(function () {
             e.preventDefault();
         }
     });
-    $("a.li-inner.tool").on("keydown", function (e) {
-        var $next;
-        switch (e.which) {
-            case 37: // left
-            case 38: // up
-                $next = $(this)
-                    .parent("li")
-                    .prev("li")
-                    .children("a")
-                    .focus();
-                e.preventDefault();
-                break;
-            case 39: // right
-            case 40: // down
-                $next = $(this)
-                    .parent("li")
-                    .next("li")
-                    .children("a")
-                    .focus();
-                e.preventDefault();
-                break;
-        }
-    });
+    //$("a.li-inner.tool").on("keydown", function (e) {
+    //    var $next;
+    //    switch (e.which) {
+    //        case 37: // left
+    //        case 38: // up
+    //            $next = $(this)
+    //                .parent("li")
+    //                .prev("li")
+    //                .children("a")
+    //                .focus();
+    //            e.preventDefault();
+    //            break;
+    //        case 39: // right
+    //        case 40: // down
+    //            $next = $(this)
+    //                .parent("li")
+    //                .next("li")
+    //                .children("a")
+    //                .focus();
+    //            e.preventDefault();
+    //            break;
+    //    }
+    //});
 });
