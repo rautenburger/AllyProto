@@ -33,12 +33,12 @@ $(function () {
     }, 1000);
 
     //allow tabbing into the list of links that are controlled by keyboard arrow keys
-    $('#overview').on('keydown', function (e) {
-        if (e.which === 9 && !e.shiftKey) {
-            $(this).next('ol').find('fieldset a:first').focus();
-            e.preventDefault();
-        }
-    });
+    //$('#overview').on('keydown', function (e) {
+    //    if (e.which === 9 && !e.shiftKey) {
+    //        $(this).next('ol').find('fieldset a:first').focus();
+    //        e.preventDefault();
+    //    }
+    //});
 
     $('a').on('keydown', function (e) {
         var $next;
