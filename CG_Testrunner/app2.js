@@ -1,4 +1,4 @@
-$(function () {
+$(function Timers() {
     /**
      * Start the timer
      * @param {integer} durationHour - duration of the timer in hours
@@ -37,7 +37,10 @@ $(function () {
             }
         }, 1000);
     }
-    startTimer(2, 'timer');
+    startTimer(2, 'timer1');
+    startTimer(2, 'timer2');
+
+
 
     //allow tabbing into the list of links that are controlled by keyboard arrow keys
     //$("#tabFilterAll").on("keydown", function (e) {
