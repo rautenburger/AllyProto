@@ -7,15 +7,14 @@
 </head>
 
 <body>
-  <!-- added a new header tag -->
-  <header aria-label="Main Menu.">
-    <!-- changed header to div -->
-    <div class="dark-bar clearfix key-navigation-group" data-navigation-id="header-toolbar">
+  <!-- added a new div tag with the role header -->
+  <div role="banner" aria-label="Main Menu.">
+    <!-- added the role div -->
+    <header role="div" class="dark-bar clearfix key-navigation-group" data-navigation-id="header-toolbar">
       <span class="lft"><img src="http://test-act-accessibility.playground.kitchen.it.taocloud.org:41186/taoAct/views/img/themes/platform/default/act-logo.png?buster=5e6b9738b7e98" alt="A C T Logo" id="tao-main-logo"></span>
       <div class="lft title-box"></div>
       <!-- Changed nav to div -->
       <div class="rgt">
-        <!-- snippet: dark bar left menu -->
         <div class="settings-menu">
           <ul class="clearfix plain">
             <li data-control="home">
@@ -23,7 +22,7 @@
               <a role="button" id="home" href="http://test-act-accessibility.playground.kitchen.it.taocloud.org:41186/taoProctoring/DeliveryServer/index">
                 <span class="icon-home"></span>
                 <!-- changed label -->
-                <span class="text hidden">Go back to tests selection</span>
+                <span class="text hidden">Go back to test selection</span>
               </a>
             </li>
             <li class="infoControl sep-before">
@@ -46,9 +45,9 @@
                 <span class="text">Exit</span>
               </a>
             </li>
-            <li class="infoControl sep-before" data-control="exit" style="">
-              <!-- added role="button" -->
-              <a role="button" href="#" tabindex="-1" class="key-navigation-highlight">
+            <li class="infoControl sep-before" data-control="exit" style="" aria-hidden="true">
+              <!-- added role="button" if button is not enabled, it should have tabindex="-1" and the parent -->
+              <a role="button" href="#" tabindex="-1" aria-hidden="true" class="key-navigation-highlight">
                 <span class="icon-logout"></span>
                 <span class="text">Exit</span>
               </a>
@@ -59,18 +58,19 @@
     </div>
     <div class="action-bar content-action-bar horizontal-action-bar top-action-bar">
       <div class="control-box size-wrapper">
-        <!-- changed div to h1 tag -->
-        <h1 class="title-box truncate">
-          <span data-control="qti-test-title" class="qti-controls" title="Luc_A11y 1 - Non linear">Luc_A11y 1 - Non linear</span>
-          <span data-control="qti-test-position" class="qti-controls" title="Section 1"> - Section 1</span>
-        </h1>
-        <!-- added aria-hidden="true" since we rely on the test status and structure region to inform about timers -->
+        <!-- added role heading and level 1 -->
+        <div role="heading" aria-level="1" class="title-box truncate">
+          <span data-control="qti-test-title" class="qti-controls" title="Luc_A11y 1 - Non linear">Luc_A11y 1 - Non linear </span>
+          <span data-control="qti-test-position" class="qti-controls" title="Section 1">- Section 1</span>
+          <!-- OTHER TICKET: repeated the timer here and added info an how many items are unanswered -->
+          <span class="qti-visually-hidden">00:40:49</span><span class="qti-visually-hidden">to answer remaining 10 questions.</span>
+        </div>
+        <!-- added aria-hidden="true" since we rely on the test status and structure region and the h1 to inform about timers -->
         <div aria-hidden="true" class="timer-box rendered">
           <a href="#" class="timer-toggler" title="Hide timers"><span class="icon-clock"></span></a>
           <div class="timer-wrapper">
             <div class="countdown rendered running started" data-control="Luc-A11y-1-non-linear" data-type="max" data-scope="test" title="Luc_A11y 1 - Non linear" disabled="">
-              <span class="label truncate">Luc_A11y 1 - Non linear</span>
-              <span class="time">00:40:49</span>
+              <span class="label truncate">Luc_A11y 1 - Non linear</span><span class="time">00:40:49</span>
             </div>
           </div>
         </div>
@@ -80,7 +80,8 @@
         </div>
       </div>
     </div>
-  </header>
+    </header>
+  </div>
 </body>
 
 </html>
